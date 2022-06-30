@@ -21,9 +21,9 @@ export default function App() {
     <>
     <Router>
        <Header />
-    
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/mynews" element={<Home />}></Route>
         <Route path="/sports" element={<Sports />}></Route>
         <Route path="/entertainment" element={<Entertainment />}></Route>
         <Route path="/science" element={<Science/>}></Route>
