@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    color: #333;
+  }
+  
+  .App {
+    width: 93vw;
+    margin: 80px auto;
+    padding: 0.5rem 0;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-row-gap: 1rem;
+    grid-column-gap: 20px;
+    /* width: 80%;
+    list-style: none;
+    display: table;
+  margin: 0 auto; */
+  }
+  
+  li {
+    border: 1.5px solid #333;
+    padding: 0px;
+    border-radius: 5px;
+  }
+  
+  /* h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  } */
+  img{
+    width: 100%;
+    height: 48%;
+    margin: auto;
+    padding: 5px;
+  }
+  h4{
+    padding: 3px;
+  }
+  
+  .anchorHead{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  .iconImg{
+    width: 125px;
+    height: 75px;
+    padding: 2px;
+  }
+  .same{
+    display: inline-block;
+  }
+  .homeImg{
+    min-height: 500px;
+  }
+  
+.name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    left: 10px;
+}
+.imgName{
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.seePost{
+  font-weight: bold;
+  text-decoration: none;
+}
+.seePost:hover{
+  color: aliceblue;
+}
