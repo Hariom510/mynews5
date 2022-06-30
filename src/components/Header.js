@@ -23,7 +23,7 @@ function Header() {
                 <InsideMenu>
                 <Link to="/" >HOME </Link>
                 <Link to="/sports">SPORTS <a href="#"></a></Link>
-                <Link to="/health">HEALTH </Link>
+                <Link to="/entertainment">ENTERTAINMENT </Link>
                 <Link to="/science">SCIENCE <a href="#"></a></Link>
                 </InsideMenu>
                 <CustomMenu onClick={()=> setBurgerStatus(true)} />
@@ -34,7 +34,7 @@ function Header() {
                 </CloseWrapper>
                 <li><Link to="/" >HOME <a href="#"></a></Link></li>
                 <li><Link to="/sports">SPORTS <a href="#"></a></Link></li>
-                <li><Link to="/health">HEALTH </Link></li>
+                <li><Link to="/entertainment">ENTERTAINMENT </Link></li>
                 <li><Link to="/science">SCIENCE <a href="#"></a></Link></li>
                 <li><Link to="/business">BUSINESS <a href="#"></a></Link></li>
                 <li><Link to="/technology">TECHNOLOGY <a href="#"></a></Link></li>

@@ -7,7 +7,7 @@ function Business() {
     const [error, setError] = useState(null);
   
     useEffect(() => {
-      fetch(`https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=25&language=en&apiKey=3d2b4d0a937c4a75817996e4416238d5`)
+      fetch(`https://inshorts.deta.dev/news?category=business`)
         .then((response) => {
           if (!response.ok) {
             throw new Error(
@@ -38,14 +38,14 @@ function Business() {
         )}
         <ul>
           {data &&
-            data.articles.map(({ author, title,description,urlToImage,content,publishedAt, url }) => (
-              <li key={title}>
-                <img src={urlToImage} alt="" />
-                <h4>{title}</h4>
-                <h6>{description}</h6>
-                <a href={url}>See post</a>
-                <br /><br /> <br />
-    
+            data.data.map(({id,title,content,imageUrl, url }) => (
+              <li key={id}>
+                <div className='images'>
+                <img src={imageUrl} alt="" />
+                </div>
+                <p>{title}</p>
+                <a className='seePost' href={url}>See post</a>
+                <br />
               </li>
             ))}
         </ul>
